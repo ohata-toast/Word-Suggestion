@@ -6,7 +6,7 @@
 
 #### 요청
 
-* {appKey}와 {secretKey}는 콘솔 상단**URL & Appkey**메뉴에서 확인이 가능합니다.
+* {appKey}와 {secretKey}는 콘솔 상단**URL & Appkey**메뉴에서 확인할 수 있습니다.
 
 [URI]
 
@@ -16,10 +16,10 @@
 
 [요청 헤더]
 
-| 이름 | 값 | 설명 |
-| --- | --- | --- |
-| Authorization | {secretKey} | 콘솔에서 발급받은 보안 키 |
-| Content-Type | application/json |  |
+| 이름 | 값 | 설명              |
+| --- | --- |-----------------|
+| Authorization | {secretKey} | 콘솔에서 발급 받은 보안 키 |
+| Content-Type | application/json |                 |
 
 [요청 본문]
 ```
@@ -78,7 +78,7 @@ curl -X POST 'https://word-suggestion-alpha.api.nhncloudservice.com/v1.0/appkeys
 
 요청
 
-* {appKey}와 {secretKey}는 콘솔 상단**URL & Appkey**메뉴에서 확인이 가능합니다.
+* {appKey}와 {secretKey}는 콘솔 상단**URL & Appkey**메뉴에서 확인할 수 있습니다.
 
 [URI]
 
@@ -88,10 +88,10 @@ curl -X POST 'https://word-suggestion-alpha.api.nhncloudservice.com/v1.0/appkeys
 
 [요청 헤더]
 
-| 이름 | 값 | 설명 |
-| --- | --- | --- |
-| Authorization | {secretKey} | 콘솔에서 발급받은 보안 키 |
-| Content-Type | application/json |  |
+| 이름 | 값 | 설명              |
+| --- | --- |-----------------|
+| Authorization | {secretKey} | 콘솔에서 발급 받은 보안 키 |
+| Content-Type | application/json |                 |
 
 [Query]
 
@@ -162,7 +162,7 @@ curl -X GET 'https://word-suggestion-alpha.api.nhncloudservice.com/v1.0/appkeys/
 
 요청
 
-* {appKey}와 {secretKey}는 콘솔 상단**URL & Appkey**메뉴에서 확인이 가능합니다.
+* {appKey}와 {secretKey}는 콘솔 상단**URL & Appkey**메뉴에서 확인할 수 있습니다.
 
 [URI]
 
@@ -172,10 +172,10 @@ curl -X GET 'https://word-suggestion-alpha.api.nhncloudservice.com/v1.0/appkeys/
 
 [요청 헤더]
 
-| 이름 | 값 | 설명 |
-| --- | --- | --- |
-| Authorization | {secretKey} | 콘솔에서 발급받은 보안 키 |
-| Content-Type | application/json |  |
+| 이름 | 값 | 설명              |
+| --- | --- |-----------------|
+| Authorization | {secretKey} | 콘솔에서 발급 받은 보안 키 |
+| Content-Type | application/json |                 |
 
 [요청 본문]
 
@@ -221,7 +221,7 @@ curl -X POST 'https://word-suggestion-alpha.api.nhncloudservice.com/v1.0/appkeys
 
 요청
 
-* {appKey}와 {secretKey}는 콘솔 상단**URL & Appkey**메뉴에서 확인이 가능합니다.
+* {appKey}와 {secretKey}는 콘솔 상단**URL & Appkey**메뉴에서 확인할 수 있습니다.
 
 [URI]
 
@@ -231,10 +231,10 @@ curl -X POST 'https://word-suggestion-alpha.api.nhncloudservice.com/v1.0/appkeys
 
 [요청 헤더]
 
-| 이름 | 값 | 설명 |
-| --- | --- | --- |
-| Authorization | {secretKey} | 콘솔에서 발급받은 보안 키 |
-| Content-Type | application/json |  |
+| 이름 | 값 | 설명              |
+| --- | --- |-----------------|
+| Authorization | {secretKey} | 콘솔에서 발급 받은 보안 키 |
+| Content-Type | application/json |                 |
 
 [요청 본문]
 
@@ -273,7 +273,7 @@ curl -X PUT 'https://word-suggestion-alpha.api.nhncloudservice.com/v1.0/appkeys/
 
 요청
 
-* {appKey}와 {secretKey}는 콘솔 상단**URL & Appkey**메뉴에서 확인이 가능합니다.
+* {appKey}와 {secretKey}는 콘솔 상단**URL & Appkey**메뉴에서 확인할 수 있습니다.
 
 [URI]
 
@@ -283,10 +283,10 @@ curl -X PUT 'https://word-suggestion-alpha.api.nhncloudservice.com/v1.0/appkeys/
 
 [요청 헤더]
 
-| 이름 | 값 | 설명 |
-| --- | --- | --- |
-| Authorization | {secretKey} | 콘솔에서 발급받은 보안 키 |
-| Content-Type | application/json |  |
+| 이름 | 값 | 설명              |
+| --- | --- |-----------------|
+| Authorization | {secretKey} | 콘솔에서 발급 받은 보안 키 |
+| Content-Type | application/json |                 |
 
 [요청 본문]
 
@@ -329,7 +329,7 @@ curl -X DELETE'https://word-suggestion-alpha.api.nhncloudservice.com/v1.0/appkey
 
 요청
 
-* {appKey}와 {secretKey}는 콘솔 상단**URL & Appkey**메뉴에서 확인이 가능합니다.
+* {appKey}와 {secretKey}는 콘솔 상단**URL & Appkey**메뉴에서 확인할 수 있습니다.
 
 [URI]
 
@@ -339,10 +339,10 @@ curl -X DELETE'https://word-suggestion-alpha.api.nhncloudservice.com/v1.0/appkey
 
 [요청 헤더]
 
-| 이름 | 값 | 설명 |
-| --- | --- | --- |
-| Authorization | {secretKey} | 콘솔에서 발급받은 보안 키 |
-| Content-Type | application/json |  |
+| 이름 | 값 | 설명              |
+| --- | --- |-----------------|
+| Authorization | {secretKey} | 콘솔에서 발급 받은 보안 키 |
+| Content-Type | application/json |                 |
 
 [응답 본문]
 
@@ -375,7 +375,7 @@ curl -X DELETE'https://word-suggestion-alpha.api.nhncloudservice.com/v1.0/appkey
 
 요청
 
-* {appKey}와 {secretKey}는 콘솔 상단**URL & Appkey**메뉴에서 확인이 가능합니다.
+* {appKey}와 {secretKey}는 콘솔 상단**URL & Appkey**메뉴에서 확인할 수 있습니다.
 
 [URI]
 
@@ -385,10 +385,10 @@ curl -X DELETE'https://word-suggestion-alpha.api.nhncloudservice.com/v1.0/appkey
 
 [요청 헤더]
 
-| 이름 | 값 | 설명 |
-| --- | --- | --- |
-| Authorization | {secretKey} | 콘솔에서 발급받은 보안 키 |
-| Content-Type | application/json |  |
+| 이름 | 값 | 설명              |
+| --- | --- |-----------------|
+| Authorization | {secretKey} | 콘솔에서 발급 받은 보안 키 |
+| Content-Type | application/json |                 |
 
 [필드]
 
