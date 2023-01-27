@@ -122,9 +122,17 @@ curl -X GET 'https://word-suggestion-alpha.api.nhncloudservice.com/v1.0/appkeys/
     },
     "result": {
         "totalCount": 2
-        "words": [
-            "원피스"
-            "이무기"
+        "dictionary": [
+            {
+                "word": "원피스",
+                "createDatetime": "2023-01-26T15:36:11.000+09:00",
+                "updateDatetime": "2023-01-26T15:36:11.000+09:00"
+            },
+            {
+                "word": "이무기",
+                "createDatetime": "2023-01-26T15:29:09.000+09:00",
+                "updateDatetime": "2023-01-26T15:29:09.000+09:00"
+            }
         [
     }
 }
@@ -140,13 +148,15 @@ curl -X GET 'https://word-suggestion-alpha.api.nhncloudservice.com/v1.0/appkeys/
 
 [필드]
 
-| 이름 | 타입 | 설명 |
-| --- | --- | --- |
-| totalCount | Integer | 단어 전체 개수 |
-| words | Array | 단어 목록 |
+| 이름                        | 타입      | 설명       |
+|---------------------------|---------|----------|
+| totalCount                | Integer | 단어 전체 개수 |
+| dictionary                | Array   | 단어 목록    |
+| dictionary.word           | String  | 단어 이름    |
+| dictionary.createDatetime | Datetime   | 단어 생성 시각 |
+| dictionary.updateDatetime | Datetime   | 단어 수정 시각 |
 
 [실패 응답]
-* Content-Type: application/json
 
 ```
 {
@@ -295,15 +305,18 @@ curl -X DELETE'https://word-suggestion-alpha.api.nhncloudservice.com/v1.0/appkey
 -H 'Authorization: ${secretKey}' \
 -H 'Content-Type: application/json' \
 --data-raw '{
-  "word": "토마토스파게티"
+  "words": [
+      "원피스"
+      "이무기"
+  ]
 }
 ```
 
 [필드]
 
-| 이름 | 타입 | 필수 여부  | 설명 |
-| --- | --- | --- | --- |
-| word | String | 필수 | 삭제 단어 |
+| 이름    | 타입    | 필수 여부  | 설명       |
+|-------|-------| --- |----------|
+| words | Array | 필수 | 삭제 단어 목록 |
 
 [응답 본문]
 

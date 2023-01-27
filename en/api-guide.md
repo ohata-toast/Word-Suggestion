@@ -122,9 +122,17 @@ curl -X GET 'https://word-suggestion-alpha.api.nhncloudservice.com/v1.0/appkeys/
     },
     "result": {
         "totalCount": 2
-        "words": [
-            "원피스"
-            "이무기"
+        "dictionary": [
+            {
+                "word": "원피스",
+                "createDatetime": "2023-01-26T15:36:11.000+09:00",
+                "updateDatetime": "2023-01-26T15:36:11.000+09:00"
+            },
+            {
+                "word": "이무기",
+                "createDatetime": "2023-01-26T15:29:09.000+09:00",
+                "updateDatetime": "2023-01-26T15:29:09.000+09:00"
+            }
         [
     }
 }
@@ -140,13 +148,16 @@ curl -X GET 'https://word-suggestion-alpha.api.nhncloudservice.com/v1.0/appkeys/
 
 [Field]
 
-| Name | Type | Description |
-| --- | --- | --- |
+| Name | Type | Description           |
+| --- | --- |-----------------------|
 | totalCount | Integer | Total number of words |
-| words | Array | Word list |
+| words | Array | Word list             |
+| dictionary                | Array   | Word list             |
+| dictionary.word           | String  | Word                  |
+| dictionary.createDatetime | Datetime   | Word created time     |
+| dictionary.updateDatetime | Datetime   | Word updated time     |
 
 [Failure Response]
-* Content-Type: application/json
 
 ```
 {
@@ -295,16 +306,18 @@ curl -X DELETE'https://word-suggestion-alpha.api.nhncloudservice.com/v1.0/appkey
 -H 'Authorization: ${secretKey}' \
 -H 'Content-Type: application/json' \
 --data-raw '{
-  "word": "토마토스파게티"
+  "words": [
+    "원피스",
+    "바닐라라떼"
+  ]
 }
 ```
 
 [Field]
 
-| Name | Type | Required  | Description |
-| --- | --- | --- | --- |
-| word | String | Required | Word to delete |
-
+| Name | Type   | Required | Description         |
+| --- |--------| -- |---------------------|
+| words | Array  | Required | Word list to delete |
 [Response Body]
 
 ```
