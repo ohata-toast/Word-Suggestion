@@ -10,7 +10,7 @@
 
 サービスの利用を中止する場合、単語校正、辞書管理サービスの利用と課金が中止されます。
 
-![Service Use Disable](http://static.toastoven.net/prod_word_suggestion/console_guide/service_use_disable.png)
+![Service Use Disable](http://static.toastoven.net/prod_word_suggestion/console_guide/ja/service_use_disable.png)
 
 ❶右側の**開く**ボタンをクリックして設定画面を開きます。<br>
 ❷ **設定しない > 保存**をクリックします。
@@ -25,7 +25,7 @@
 
 サービスの利用を再開すると、単語校正、辞書管理サービスの利用と課金が再開されます。
 
-![Service Use Enable](http://static.toastoven.net/prod_word_suggestion/console_guide/service_use_enable.png)
+![Service Use Enable](http://static.toastoven.net/prod_word_suggestion/console_guide/ja/service_use_enable.png)
 
 ❶右側の**開く**をクリックして設定画面を開きます。<br>
 ❷ **設定 > 保存**をクリックします。
@@ -41,7 +41,7 @@
 
 韓国語、英語の単語に対する校正をリクエストできます。
 
-![Suggest Request](http://static.toastoven.net/prod_word_suggestion/console_guide/suggest_request.png)
+![Suggest Request](http://static.toastoven.net/prod_word_suggestion/console_guide/ja/suggest_request.png)
 
 ❶ **単語入力** フィールドに校正が必要な単語を入力します。<br>
 ❷ **校正**をクリックすると入力した内容の校正結果が画面下部に表示されます。
@@ -54,20 +54,20 @@
 
 5,000個以内まで単語を登録できます。
 
-![Word Add](http://static.toastoven.net/prod_word_suggestion/console_guide/word_add_1.png)
+![Word Add](http://static.toastoven.net/prod_word_suggestion/console_guide/ja/word_add_1.png)
 
 ❶ **単語登録**をクリックします。<br>
 ❷単語登録は **直接入力** または **ファイルアップロード**を選択できます。<br>
 ❸ 1MB以内で単語を入力した後、**確認**をクリックします。<br>
 - 基本辞書、ユーザー辞書にすでに登録されている単語は登録できません。
 
-![Word Add Result](http://static.toastoven.net/prod_word_suggestion/console_guide/word_add_result.png)
+![Word Add Result](http://static.toastoven.net/prod_word_suggestion/console_guide/ja/word_add_result.png)
 ❶単語登録に成功または失敗した単語の数を確認できます。<br>
 ❷単語登録に失敗した単語リストを確認できます。
 
 ### 単語修正
 
-![Word Modify](http://static.toastoven.net/prod_word_suggestion/console_guide/word_modify.png)
+![Word Modify](http://static.toastoven.net/prod_word_suggestion/console_guide/ja/word_modify.png)
 
 ❶修正が必要な単語のチェックボックスを選択します。<br>
 ❷ **単語修正**をクリックします。<br>
@@ -76,7 +76,7 @@
 
 ### 単語削除
 
-![Word Delete](http://static.toastoven.net/prod_word_suggestion/console_guide/word_delete.png)
+![Word Delete](http://static.toastoven.net/prod_word_suggestion/console_guide/ja/word_delete.png)
 
 ❶削除する単語のチェックボックスを選択します。複数の項目を選択できます。<br>
 ❷ **単語削除**をクリックします。<br>
@@ -85,14 +85,14 @@
 
 ### 単語照会
 
-![Word Search](http://static.toastoven.net/prod_word_suggestion/console_guide/word_search.png)
+![Word Search](http://static.toastoven.net/prod_word_suggestion/console_guide/ja/word_search.png)
 
 ❶検索窓に照会するテキストを入力した後、検索ボタンをクリックします。<br>
 ❷入力されたテキストが含まれる単語をフィルタリングできます。
 
 ### 単語ダウンロード
 
-![Word Download](http://static.toastoven.net/prod_word_suggestion/console_guide/word_download.png)
+![Word Download](http://static.toastoven.net/prod_word_suggestion/console_guide/ja/word_download.png)
 
 ❶ **単語ダウンロード**をクリックします。<br>
 ❷単語リストファイルがファイル名「word_suggestion.txt」でダウンロードされます。
