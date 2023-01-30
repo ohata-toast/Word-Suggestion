@@ -27,7 +27,7 @@ curl -X POST 'https://word-suggestion-alpha.api.nhncloudservice.com/v1.0/appkeys
 -H 'Authorization: ${secretKey}' \
 -H 'Content-Type: application/json' \
 --data-raw '{
-  "word": "ウナピース",
+  "word": "우너피스",
 }'
 ```
 
@@ -49,8 +49,8 @@ curl -X POST 'https://word-suggestion-alpha.api.nhncloudservice.com/v1.0/appkeys
         "resultMessage": "SUCCESS"
     },
     "result": {
-        "requestWord": "ウナピース"
-        "suggestWord": "ワンピース"
+        "requestWord": "우너피스"
+        "suggestWord": "원피스"
         "isSuggest": true
     }
 }
@@ -122,9 +122,17 @@ curl -X GET 'https://word-suggestion-alpha.api.nhncloudservice.com/v1.0/appkeys/
     },
     "result": {
         "totalCount": 2
-        "words": [
-            "ワンピース"
-            "大蛇"
+        "dictionary": [
+            {
+                "word": "원피스",
+                "createDatetime": "2023-01-26T15:36:11.000+09:00",
+                "updateDatetime": "2023-01-26T15:36:11.000+09:00"
+            },
+            {
+                "word": "이무기",
+                "createDatetime": "2023-01-26T15:29:09.000+09:00",
+                "updateDatetime": "2023-01-26T15:29:09.000+09:00"
+            }
         [
     }
 }
@@ -144,9 +152,12 @@ curl -X GET 'https://word-suggestion-alpha.api.nhncloudservice.com/v1.0/appkeys/
 | --- | --- | --- |
 | totalCount | Integer | 単語全体数 |
 | words | Array | 単語リスト |
+| dictionary                | Array   | 単語リスト            |
+| dictionary.word           | String  | 単語                 |
+| dictionary.createDatetime | Datetime   | 単語作成日時     |
+| dictionary.updateDatetime | Datetime   | 単語修正日時    |
 
 [失敗レスポンス]
-* Content-Type: application/json
 
 ```
 {
@@ -185,8 +196,8 @@ curl -X POST 'https://word-suggestion-alpha.api.nhncloudservice.com/v1.0/appkeys
 -H 'Content-Type: application/json' \
 --data-raw '{
   "words": [
-    "ワンピース",
-    "バニララテ"
+    "원피스",
+    "바닐라라떼"
   ]
 }'
 ```
@@ -295,15 +306,18 @@ curl -X DELETE'https://word-suggestion-alpha.api.nhncloudservice.com/v1.0/appkey
 -H 'Authorization: ${secretKey}' \
 -H 'Content-Type: application/json' \
 --data-raw '{
-  "word": "トマトスパゲティ"
+  "words": [
+    "원피스",
+    "바닐라라떼"
+  ]
 }
 ```
 
 [フィールド]
 
-| 名前 | タイプ | 必須かどうか | 説明 |
-| --- | --- | --- | --- |
-| word | String | 必須 | 削除単語 |
+| 名前    | タイプ | 必須かどうか | 説明 |
+|-------| --- | --- | --- |
+| words | Array | 必須 | 削除するワードリスト |
 
 [レスポンス本文]
 
