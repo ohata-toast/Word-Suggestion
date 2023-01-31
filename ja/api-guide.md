@@ -12,7 +12,7 @@
 
 | メソッド | URI |
 | --- | --- |
-| POST | [https://word-suggestion-alpha.api.nhncloudservice.com/v1.0/appkeys/{appKey}/suggest](https://word-suggestion-alpha.api.nhncloudservice.com/v1.0/appkeys/%7BappKey%7D/word-suggestion/suggestion) |
+| POST | [https://word-suggestion.api.nhncloudservice.com/v1.0/appkeys/{appKey}/suggest](https://word-suggestion.api.nhncloudservice.com/v1.0/appkeys/%7BappKey%7D/word-suggestion/suggestion) |
 
 [リクエストヘッダ]
 
@@ -23,7 +23,7 @@
 
 [リクエスト本文]
 ```
-curl -X POST 'https://word-suggestion-alpha.api.nhncloudservice.com/v1.0/appkeys/{appKey}/suggest' \
+curl -X POST 'https://word-suggestion.api.nhncloudservice.com/v1.0/appkeys/{appKey}/suggest' \
 -H 'Authorization: ${secretKey}' \
 -H 'Content-Type: application/json' \
 --data-raw '{
@@ -84,7 +84,7 @@ curl -X POST 'https://word-suggestion-alpha.api.nhncloudservice.com/v1.0/appkeys
 
 | メソッド | URI |
 | --- | --- |
-| GET | https://word-suggestion-alpha.api.nhncloudservice.com/v1.0/appkeys/{appKey}/words |
+| GET | https://word-suggestion.api.nhncloudservice.com/v1.0/appkeys/{appKey}/words |
 
 [リクエストヘッダ]
 
@@ -106,7 +106,7 @@ curl -X POST 'https://word-suggestion-alpha.api.nhncloudservice.com/v1.0/appkeys
 [リクエスト本文]
 
 ```
-curl -X GET 'https://word-suggestion-alpha.api.nhncloudservice.com/v1.0/appkeys/{appKey}/words'
+curl -X GET 'https://word-suggestion.api.nhncloudservice.com/v1.0/appkeys/{appKey}/words'
 ```
 
 #### レスポンス
@@ -179,7 +179,7 @@ curl -X GET 'https://word-suggestion-alpha.api.nhncloudservice.com/v1.0/appkeys/
 
 | メソッド | URI |
 | --- | --- |
-| POST | [https://word-suggestion-alpha.api.nhncloudservice.com/v1.0/appkeys/{appKey}/words](https://word-suggestion-alpha.api.nhncloudservice.com/v1.0/appkeys/%7BappKey%7D/word-suggestion/dictionary) |
+| POST | [https://word-suggestion.api.nhncloudservice.com/v1.0/appkeys/{appKey}/words](https://word-suggestion.api.nhncloudservice.com/v1.0/appkeys/%7BappKey%7D/word-suggestion/dictionary) |
 
 [リクエストヘッダ]
 
@@ -191,7 +191,7 @@ curl -X GET 'https://word-suggestion-alpha.api.nhncloudservice.com/v1.0/appkeys/
 [リクエスト本文]
 
 ```
-curl -X POST 'https://word-suggestion-alpha.api.nhncloudservice.com/v1.0/appkeys/{appKey}/words' \
+curl -X POST 'https://word-suggestion.api.nhncloudservice.com/v1.0/appkeys/{appKey}/words' \
 -H 'Authorization: ${secretKey}' \
 -H 'Content-Type: application/json' \
 --data-raw '{
@@ -238,7 +238,7 @@ curl -X POST 'https://word-suggestion-alpha.api.nhncloudservice.com/v1.0/appkeys
 
 | メソッド | URI |
 | --- | --- |
-| PUT | [https://word-suggestion-alpha.api.nhncloudservice.com/v1.0/appkeys/{appKey}/words](https://word-suggestion-alpha.api.nhncloudservice.com/v1.0/appkeys/%7BappKey%7D/word-suggestion/dictionary) |
+| PUT | [https://word-suggestion.api.nhncloudservice.com/v1.0/appkeys/{appKey}/words](https://word-suggestion.api.nhncloudservice.com/v1.0/appkeys/%7BappKey%7D/word-suggestion/dictionary) |
 
 [リクエストヘッダ]
 
@@ -250,7 +250,7 @@ curl -X POST 'https://word-suggestion-alpha.api.nhncloudservice.com/v1.0/appkeys
 [リクエスト本文]
 
 ```
-curl -X PUT 'https://word-suggestion-alpha.api.nhncloudservice.com/v1.0/appkeys/{appKey}/words'
+curl -X PUT 'https://word-suggestion.api.nhncloudservice.com/v1.0/appkeys/{appKey}/words'
 ```
 
 [フィールド]
@@ -290,7 +290,7 @@ curl -X PUT 'https://word-suggestion-alpha.api.nhncloudservice.com/v1.0/appkeys/
 
 | メソッド | URI |
 | --- | --- |
-| DELETE | [https://word-suggestion-alpha.api.nhncloudservice.com/v1.0/appkeys/{appKey}/words](https://word-suggestion-alpha.api.nhncloudservice.com/v1.0/appkeys/%7BappKey%7D/word-suggestion/dictionary) |
+| DELETE | [https://word-suggestion.api.nhncloudservice.com/v1.0/appkeys/{appKey}/words](https://word-suggestion.api.nhncloudservice.com/v1.0/appkeys/%7BappKey%7D/word-suggestion/dictionary) |
 
 [リクエストヘッダ]
 
@@ -302,7 +302,7 @@ curl -X PUT 'https://word-suggestion-alpha.api.nhncloudservice.com/v1.0/appkeys/
 [リクエスト本文]
 
 ```
-curl -X DELETE'https://word-suggestion-alpha.api.nhncloudservice.com/v1.0/appkeys/{appKey}/words'
+curl -X DELETE'https://word-suggestion.api.nhncloudservice.com/v1.0/appkeys/{appKey}/words'
 -H 'Authorization: ${secretKey}' \
 -H 'Content-Type: application/json' \
 --data-raw '{
@@ -349,7 +349,7 @@ curl -X DELETE'https://word-suggestion-alpha.api.nhncloudservice.com/v1.0/appkey
 
 | メソッド | URI |
 | --- | --- |
-| GET | [https://word-suggestion-alpha.api.nhncloudservice.com/v1.0/appkeys/{appKey}/service-use](https://word-suggestion-alpha.api.nhncloudservice.com/v1.0/appkeys/%7BappKey%7D/word-suggestion/dictionary) |
+| GET | [https://word-suggestion.api.nhncloudservice.com/v1.0/appkeys/{appKey}/service-use](https://word-suggestion.api.nhncloudservice.com/v1.0/appkeys/%7BappKey%7D/word-suggestion/dictionary) |
 
 [リクエストヘッダ]
 
@@ -395,7 +395,7 @@ curl -X DELETE'https://word-suggestion-alpha.api.nhncloudservice.com/v1.0/appkey
 
 | メソッド | URI |
 |-----| --- |
-| PUT | [https://word-suggestion-alpha.api.nhncloudservice.com/v1.0/appkeys/{appKey}/service-use](https://word-suggestion-alpha.api.nhncloudservice.com/v1.0/appkeys/%7BappKey%7D/word-suggestion/dictionary) |
+| PUT | [https://word-suggestion.api.nhncloudservice.com/v1.0/appkeys/{appKey}/service-use](https://word-suggestion.api.nhncloudservice.com/v1.0/appkeys/%7BappKey%7D/word-suggestion/dictionary) |
 
 [リクエストヘッダ]
 
