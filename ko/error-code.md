@@ -12,7 +12,6 @@
 | 405        | METHOD_NOT_ALLOWED        | Method Not Allowed |
 | 4000001    | INVALID_PARAMETER         | Invalid parameter. |
 | 4000002    | SERVICE_USE_DISABLE       | The service usage setting is disabled |
-| 4000004    | OVER_COUNT_LIMIT          | The number of words exceeds the limit.  |
 | 4000101    | ALREADY_EXIST_WORD_COMMON | The word is already exist in common dictionary. |
 | 4000102    | ALREADY_EXIST_WORD_USER   | The word is already exist in user dictionary. |
 | 4000103    | INVALID_WORD              | The word is invalid. |
