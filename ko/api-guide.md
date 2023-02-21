@@ -95,13 +95,13 @@ curl -X POST 'https://word-suggestion.api.nhncloudservice.com/v1.0/appkeys/{appK
 
 [Query]
 
-| 이름 | 타입 | 필수 | 설명 |
-| --- | --- | --- | --- |
+| 이름 | 타입 | 필수 | 설명                                                                                                    |
+| --- | --- | --- |-------------------------------------------------------------------------------------------------------|
 | sortKey | String | - | 단어 목록 정렬할 때 사용할 속성<br>`update_datetime`: 최신 업데이트순(기본값)<br>`create_datetime`: 단어 생성순<br>`word`: 단어 이름순 |
-| word | String | - | {word} 문자열을 포함하는 단어 |
-| sortDirection | String | - | 단어 목록 정렬할 속성<br>`asc`: 오름차순<br>`desc`: 내림차순(기본값) |
-| page | Long | - | 페이지 |
-| limit | Long | - | 반환할 단어 개수 |
+| word | String | - | {word} 문자열을 포함하는 단어                                                                                   |
+| sortDirection | String | - | 단어 목록 정렬할 속성<br>`asc`: 오름차순<br>`desc`: 내림차순(기본값)                                                      |
+| page | Long | - | 페이지                                                                                                   |
+| limit | Long | - | 반환할 단어 개수(최대 5,000개)                                                                                  |
 
 [요청 본문]
 
