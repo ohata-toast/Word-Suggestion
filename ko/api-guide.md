@@ -101,7 +101,7 @@ curl -X POST 'https://word-suggestion.api.nhncloudservice.com/v1.0/appkeys/{appK
 | word | String | - | {word} 문자열을 포함하는 단어                                                                                   |
 | sortDirection | String | - | 단어 목록 정렬할 속성<br>`asc`: 오름차순<br>`desc`: 내림차순(기본값)                                                      |
 | page | Long | - | 페이지                                                                                                   |
-| limit | Long | - | 반환할 단어 개수(최대 5000)                                                                                    |
+| limit | Long | - | 반환할 단어 개수(최대 5,000개)                                                                                  |
 
 [요청 본문]
 
