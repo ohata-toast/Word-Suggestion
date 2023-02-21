@@ -95,13 +95,13 @@ curl -X POST 'https://word-suggestion.api.nhncloudservice.com/v1.0/appkeys/{appK
 
 [Query]
 
-| 名前 | タイプ | 必須 | 説明 |
-| --- | --- | --- | --- |
+| 名前 | タイプ | 必須 | 説明                                                                                                  |
+| --- | --- | --- |-------------------------------------------------------------------------------------------------------|
 | sortKey | String | - | 単語リストをソートする時に使用するプロパティ<br>`update_datetime`：最新アップデート順(デフォルト値)<br>`create_datetime`：単語作成順<br>`word`：単語名順 |
-| word | String | - | {word}文字列を含む単語 |
-| sortDirection | String | - | 単語リストをソートするプロパティ<br>`asc`：昇順<br>`desc`：降順(デフォルト値) |
-| page | Long | - | ページ |
-| limit | Long | - | 返す単語数 |
+| word | String | - | {word}文字列を含む単語                                                                                 |
+| sortDirection | String | - | 単語リストをソートするプロパティ<br>`asc`：昇順<br>`desc`：降順(デフォルト値)                                                      |
+| page | Long | - | ページ                                                                                                 |
+| limit | Long | - | 返す単語数(最大5,000個)                                                                                  |
 
 [リクエスト本文]
 
